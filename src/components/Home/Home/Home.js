@@ -5,6 +5,8 @@ import Header from '../Header/Header/Header';
 import MediaPartner from '../MediaPartner/MediaPartner';
 import Services from '../Services/Services';
 import WorksWithCarosal from '../WorksWithCarosal/WorksWithCarosal';
+import ClientFeedback from './ClientFeedback/ClientFeedback';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
@@ -14,6 +16,8 @@ const Home = () => {
             <MediaPartner></MediaPartner>
             <Services></Services>
             <WorksWithCarosal></WorksWithCarosal>
+            <ClientFeedback></ClientFeedback>
+            <Footer></Footer>
         </>
        </div>
     );

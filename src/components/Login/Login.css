@@ -1,0 +1,10 @@
+.logo{
+    width: 150px;
+    height: 47px;
+   }
+   .login-box {
+       margin: auto;
+       height: 300px;
+       width: 500px;
+       border: 1px solid gray;
+   }
