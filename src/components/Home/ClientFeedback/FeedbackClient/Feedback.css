@@ -1,0 +1,9 @@
+.p-float{
+    float: left;
+}
+.pic {
+    height: 50px;
+}
+.col-border{
+    border:  1px solid gray;
+}

@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import logo from '../../images/logos/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import firebaseConfig from './firebase.Config';
+import { UserContext } from '../../App';
+
 const Login = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const history = useHistory(); 
+    const location = useLocation() ; 
+    let { from } = location.state || { from: { pathname: "/" } };
+    if (firebase.apps.length === 0){
+        firebase.initializeApp(firebaseConfig); 
+    }
+   
+    const handleGoogleSign =() => {
+
+        const provider = new firebase.auth.GoogleAuthProvider(); 
+        firebase.auth().signInWithPopup(provider).then(function(result) {
+            const {displayName, email} = result.user;
+            const signedInUser = { displayName, email}
+            setLoggedInUser(signedInUser);
+           history.replace(from);
+          })
+          .catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            var email = error.email;
+            var credential = error.credential;
+          });
+    }
     return (
         <div className="body">
             <Container>
@@ -15,7 +44,7 @@ const Login = () => {
                        <div className="login-box d-flex">
                          <div className="m-auto">
                            <h3 className="pl-5 pb-3">Login With</h3>
-                           <Button className="btn bg-light text-dark pl-5 pr-5 mb-3">Continue with Google</Button>
+                           <Button onClick={handleGoogleSign} className="btn bg-light text-dark pl-5 pr-5 mb-3">Continue with Google</Button>
                            <p>Don't have an account ?<span><Link> Create an account</Link></span></p>
                          </div>
                        </div>

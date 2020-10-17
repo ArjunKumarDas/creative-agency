@@ -5,8 +5,9 @@ import Header from '../Header/Header/Header';
 import MediaPartner from '../MediaPartner/MediaPartner';
 import Services from '../Services/Services';
 import WorksWithCarosal from '../WorksWithCarosal/WorksWithCarosal';
-import ClientFeedback from './ClientFeedback/ClientFeedback';
+// import ClientFeedback from './ClientFeedback/ClientFeedback';
 import Footer from '../Footer/Footer';
+import ClientFeedback from '../ClientFeedback/ClientFeedback/ClientFeedback';
 
 const Home = () => {
     return (
