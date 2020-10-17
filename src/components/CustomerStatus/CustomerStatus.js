@@ -7,7 +7,7 @@ import { UserContext } from '../../App';
 
 
 const CustomerStatus = () => {
-    // const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
     const [status, setStatus] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/user')

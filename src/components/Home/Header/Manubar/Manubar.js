@@ -8,11 +8,11 @@ const Manubar = () => {
       <Row className="pt-3">
         <Col>
           <Navbar expand="lg">
-            <Navbar.Brand href="#home"><img className="logo" src={logo} alt=""/></Navbar.Brand>
+            <Navbar.Brand href="/"><img className="logo" src={logo} alt=""/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link className="mr-5 text-dark" href="/home">Home</Nav.Link>
+                <Nav.Link className="mr-5 text-dark" href="/">Home</Nav.Link>
                 <Nav.Link className="mr-5 text-dark" href="/portfolio">Our Portfolio</Nav.Link>
                 <Nav.Link className="mr-5 text-dark" href="/teem">Our Team</Nav.Link>
                 <Nav.Link className="mr-5 text-dark" href="/conatct">Contact Us</Nav.Link>

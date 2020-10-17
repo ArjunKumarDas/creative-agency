@@ -37,7 +37,7 @@ const Login = () => {
         <div className="body">
             <Container>
                 <Row className="mt-5">
-                    <Col className="d-flex justify-content-center"><img className="logo" src={logo} alt="" /></Col>
+                    <Col className="d-flex justify-content-center"><Link to="/"><img className="logo" src={logo} alt="" /></Link></Col>
                 </Row>
                 <Row className="mt-5">
                     <Col className="">
