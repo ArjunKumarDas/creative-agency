@@ -9,13 +9,13 @@ https://creative-agency-934c1.web.app
 
     ** Technologies: **
 
-    ⋅⋅*JavaScript
-     ⋅⋅*React
-     ⋅⋅*Node.js
-     ⋅⋅*Bootstrap
-     ⋅⋅*Material UI
-     ⋅⋅*Express.js 
-     ⋅⋅*MongoDB 
-     ⋅⋅*Firebase
-    ⋅⋅*Authentication
-    ⋅⋅*Heroku.
+    ⋅⋅* JavaScript
+     ⋅⋅* React
+    ⋅⋅* Node.js
+     ⋅⋅* Bootstrap
+     ⋅⋅* Material UI
+     ⋅⋅* Express.js 
+     ⋅⋅* MongoDB 
+    ⋅⋅* Firebase
+    ⋅⋅* Authentication
+    ⋅⋅* Heroku
