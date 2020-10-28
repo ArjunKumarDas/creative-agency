@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const AdminServiceStatus = () => {
     const [order, setOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/allUser')
+        fetch('https://stormy-brook-77965.herokuapp.com/allUser')
         .then(res => res.json())
         .then(data => setOrder(data));
     }, [])

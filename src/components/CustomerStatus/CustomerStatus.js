@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './CustomerStatus.css';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import {  Col, Row } from 'react-bootstrap';
 import NavbarTop from '../SharedPart/NavbarTop/NavbarTop';
 import Sidebar from '../Sidebar/Sidebar';
 import { UserContext } from '../../App';
@@ -10,8 +10,8 @@ const CustomerStatus = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext); 
     const [status, setStatus] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/user')
-        // fetch('http://localhost:5000/user?email='+loggedInUser.email)
+        fetch('https://stormy-brook-77965.herokuapp.com/user')
+        // fetch('https://stormy-brook-77965.herokuapp.com/user?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => setStatus(data));
     }, [])

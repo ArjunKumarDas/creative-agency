@@ -21,7 +21,7 @@ const AdminAddService = () => {
         formData.append('name', info.name);
         formData.append('about', info.about);
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://stormy-brook-77965.herokuapp.com/addService', {
             method: 'POST',
             body: formData
           })

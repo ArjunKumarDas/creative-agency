@@ -9,7 +9,7 @@ const CustomerFrom = () => {
   // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = data => {
-    fetch('http://localhost:5000/addWork', {
+    fetch('https://stormy-brook-77965.herokuapp.com/addWork', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(data)

@@ -8,7 +8,7 @@ import Sidebar from '../../Sidebar/Sidebar';
 const ReviewPage = () => {
     const {  handleSubmit } = useForm();
     const onSubmit = data => {
-      fetch('http://localhost:5000/addReview', {
+      fetch('https://stormy-brook-77965.herokuapp.com/addReview', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(data)
@@ -75,7 +75,7 @@ export default ReviewPage;
 // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 //     const handleReview = () => {
 //          const addReview = { ...loggedInUser }
-//          fetch('http://localhost:5000/addReview', {
+//          fetch('https://stormy-brook-77965.herokuapp.com/addReview', {
 //              method: 'POST',
 //              headers: {'Content-Type': 'application/json'},
 //              body: JSON.stringify(addReview)
